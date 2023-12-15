@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/myreset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/elminsert.js" defer></script>
+    <script src="./js/macdo.js" defer></script>
+  </head>
+  <body>
+    <!-- <a href="#">버튼</a> -->
+    <!--헤더-->
+
+    <div class="wrap">
+      <!--하단 배경-->
+
+      <header class="hd">
+        <nav class="mx">
+          <h1 class="logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="로고" /></a>
+          </h1>
+          <ul class="gnb pc">
+            <li>
+              <a href="#">메뉴</a>
+              <ul class="sub">
+                <li><a href="#">버거</a></li>
+                <li><a href="#">맥런치</a></li>
+                <li><a href="#">맥모닝</a></li>
+                <li><a href="#">해피 스낵</a></li>
+                <li><a href="#">사이드</a></li>
+                <li><a href="#">맥카페</a></li>
+                <li><a href="#">해피밀</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">스토어</a>
+              <ul class="sub">
+                <li><a href="#">매장 찾기</a></li>
+                <li><a href="#">맥 딜리버리</a></li>
+                <li><a href="#">맥 드라이브</a></li>
+                <li><a href="#">임차문의</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">프로모션</a>
+              <ul class="sub">
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">새로운 소식</a></li>
+                <li><a href="#">이달의 해피밀</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드</a>
+              <ul class="sub">
+                <li><a href="#">브랜드 소개</a></li>
+                <li><a href="#">사회적 책임과 지원</a></li>
+                <li><a href="#">품질 이야기</a></li>
+                <li><a href="#">크루 이야기</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="gnbM">
+            <div class="gnbMdeliver">
+              <a href="#"><i class="fa-solid fa-car"></i>맥 딜리버리</a>
+              <a href="#"><i class="fa-solid fa-car"></i>맥 드라이브</a>
+            </div>
+            <ul class="gnb">
+              <li>
+                <a href="#">메뉴</a>
+                <ul class="sub">
+                  <li><a href="#">버거</a></li>
+                  <li><a href="#">맥런치</a></li>
+                  <li><a href="#">맥모닝</a></li>
+                  <li><a href="#">해피 스낵</a></li>
+                  <li><a href="#">사이드</a></li>
+                  <li><a href="#">맥카페</a></li>
+                  <li><a href="#">해피밀</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">스토어</a>
+                <ul class="sub">
+                  <li><a href="#">매장 찾기</a></li>
+                  <li><a href="#">맥 딜리버리</a></li>
+                  <li><a href="#">맥 드라이브</a></li>
+                  <li><a href="#">임차문의</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로모션</a>
+                <ul class="sub">
+                  <li><a href="#">이벤트</a></li>
+                  <li><a href="#">새로운 소식</a></li>
+                  <li><a href="#">이달의 해피밀</a></li>
+                </ul>
+              </li>
+              <!-- <li>
+                <a href="#test">프로모션2</a>
+              </li> -->
+              <li>
+                <a href="#">브랜드</a>
+                <ul class="sub">
+                  <li><a href="#">브랜드 소개</a></li>
+                  <li><a href="#">사회적 책임과 지원</a></li>
+                  <li><a href="#">품질 이야기</a></li>
+                  <li><a href="#">크루 이야기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <p class="mSearch"><a href="#">매장 찾기</a></p>
+          </div>
+
+          <div class="func">
+            <a href="#" target="_blank" class="langIcon">
+              ENG
+              <!-- <i class="fa-solid fa-globe"></i> -->
+              <!-- <img src="./img/global.svg" alt="" /> -->
+            </a>
+            <a href="#" target="_blank" class="searchIcon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+            <i class="fa-solid fa-bars ham"></i>
+          </div>
+        </nav>
+      </header>
+      <div class="bodyBg"></div>
+      <!--헤더-->
+      <!--swiper-->
+      <section class="swiper mySwiper">
+        <div class="swiper-wrapper slideCon">
+          <!-- <div class="swiper-slide"><img src="./img/slide04.jpg" alt="" /></div> -->
+          <div class="swiper-slide"><img src="./img/slide02.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/slide03.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/slide05.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/slide06.jpg" alt="" /></div>
+          <div class="swiper-slide"><img src="./img/slide07.jpg" alt="" /></div>
+        </div>
+        <div class="swiper-button-next nextBt"></div>
+        <div class="swiper-button-prev prevBt"></div>
+      </section>
+      <!--swiper-->
+      <section class="sec1 mx">
+        <section class="mainMenu">
+          <!-- <h2>Menu</h2> -->
+          <form class="mainSearch">
+            <input type="text" placeholder="1955버거 어떠세요?" />
+          </form>
+          <nav class="menuTab">
+            <p data-menuName="tabBurger">버거</p>
+            <p data-menuName="tabMmorning">맥모닝</p>
+            <p data-menuName="tabMLunch">맥런치</p>
+            <p data-menuName="tabSnack">해피스낵</p>
+            <p data-menuName="tabDesert">사이드</p>
+            <p data-menuName="tabCafe">맥카페</p>
+            <p data-menuName="tabHappyMeal">해피밀</p>
+          </nav>
+
+          <!--tabMenu1-->
+          <div class="tabBurger">
+            <ul class="tabCon">
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>1955 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/더블쿼터파운더지츠_Double-Quarter-Pounder®-with-Cheese.png"
+                  alt="" />
+                <span>더블 쿼터파운더 치즈버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/치즈버거_Cheeseburger.png" alt="" />
+                <span>치즈 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/베이컨토마토디럭스_Bacon-Tomato-Deluxe.png"
+                  alt="" />
+                <span>베이컨 토마토 디럭스버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/에그불고기버_Egg-Bulgogi-Burger.png" alt="" />
+                <span>에그 불고기 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/슈슈버거_Supreme-Shrimp-Burger.png" alt="" />
+                <span>슈슈 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥스파이시스리라차마요_McSpicy®-Sriracha-Mayo-Meal.png"
+                  alt="" />
+                <span>맥 스파이시 스리라차 마요버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥치킨모짜렐라_McChicken®-Mozzarella.png"
+                  alt="" />
+                <span>맥 치킨 모짜렐라 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거5</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabMmorning-->
+          <div class="tabMmorning">
+            <ul class="tabCon">
+              <li>
+                <img src="img/베이컨에그맥머핀_Bacon-Egg-McMuffin.png" alt="" />
+                <span>베이컨 에그 맥머핀</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/에그맥머핀_Egg-McMuffin.png" alt="" />
+                <span>에그 맥머핀</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/소시지에그맥머핀_Sausage-Egg-McMuffin.png"
+                  alt="" />
+                <span>소시지 에그 맥머핀</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/베이컨토마토에그머핀_BLT-Egg-Muffin.png" alt="" />
+                <span>베이컨 토마토 에그 머핀</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/상하이치키스낵랩_Shanghai-Chicken-Snack-Wrap.png"
+                  alt="" />
+                <span>상하이 치킨 스낵랩</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/디럭스브랙퍼스트_Deluxe-Breakfast.png" alt="" />
+                <span>디럭스 브랙퍼스트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌3조각_Hotcakes-3pcs.png" alt="" />
+                <span>핫케익 3조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabMLunch-->
+          <div class="tabMLunch">
+            <ul class="tabCon">
+              <li>
+                <img src="img/1955버거세트_1955®-Burger-Meal.png" alt="" />
+                <span>1955버거 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/더블불고기버거세트_Double-Bulgogi-Burger-Meal.png"
+                  alt="" />
+                <span>더블 불고기버거 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥스파이시상하이버거세트_McSpicy®-Shanghai-Burger-Meal.png"
+                  alt="" />
+                <span>맥스파이시 상하이버거 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥스파이시스리라차마요세트_McSpicy®-Sriracha-Mayo-Meal.png"
+                  alt="" />
+                <span>맥스파이시 스리라차마요 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥크리스피디럭스버거세트_McCrispy™-Deluxe-Burger-Meal.png"
+                  alt="" />
+                <span>맥크리스피 디럭스버거 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/베이컨토마토디럭스세트_Bacon-Tomato-Deluxe-Meal.png"
+                  alt="" />
+                <span>베이컨 토마토 디럭스 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/빅맥세트_Big-Mac®-Meal.png" alt="" />
+                <span>빅맥 세트</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <!-- <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케잌 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케잌 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케잌 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케잌 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케잌 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li> -->
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabSnack-->
+          <div class="tabSnack">
+            <ul class="tabCon">
+              <li>
+                <img
+                  src="img/골든모짜렐라치즈스틱_Golden-Mozzarella-Cheese-Sticks-2pcs.png"
+                  alt="" />
+                <span>골든 모짜렐라 치즈 스틱</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥스파이시치킨텐더2조각_McSpicy®-Chicken-Tenders-2pcs.png"
+                  alt="" />
+                <span>맥스파이시 치킨텐더 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/소세지스낵랩_Sausage-Snack-Wrap.png" alt="" />
+                <span>소세지 스낵랩</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/아이스아메리카노M_Iced-Americano.png" alt="" />
+                <span>아이스 아메리카노 M</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/카페라떼M_Café-Late.png" alt="" />
+                <span>카페라떼 M</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/코카콜라m_Coca-Cola.png" alt="" />
+                <span>코카콜라 M</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/타로파이_Taro-Pie.png" alt="" />
+                <span>타로파이</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <!-- <li>
+                <img
+                  src="img/맥치킨모짜렐라_McChicken®-Mozzarella.png"
+                  alt="" />
+                <span>맥 치킨 모짜렐라 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거5</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li> -->
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabDesert-->
+          <div class="tabDesert">
+            <ul class="tabCon">
+              <li>
+                <img
+                  src="img/골든모짜렐라치즈스틱_Golden-Mozzarella-Cheese-Sticks-2pcs.png"
+                  alt="" />
+                <span>골든 모짜렐라 치즈스틱</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/맥너겟_McNuggets.png" alt="" />
+                <span>맥너겟</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/맥스파이시치킨텐더_McSpicy®-Chicken-Tenders.png"
+                  alt="" />
+                <span>맥스파이시 치킨 텐더</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/상하이치킨스낵랩_Shanghai-Chicken-Snack-Wrap.png"
+                  alt="" />
+                <span>상하이 치킨 스낵랩</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/소세지스낵랩_Sausage-Snack-Wrap.png" alt="" />
+                <span>소세지 스낵랩</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/토마토치킨스낵랩_Tomato-Chicken-Snack-Wrap.png"
+                  alt="" />
+                <span>토마토 치킨 스낵랩</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/해쉬브라운_Hash-Brown.png" alt="" />
+                <span>해쉬브라운</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/칠리치즈후라이_Chili-Cheese-Fries.png" alt="" />
+                <span>칠리 치즈 후라이</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>후렌치 후라이</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/코울슬로_Coleslaw.png" alt="" />
+                <span>코울슬로</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <!-- <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li> -->
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabCafe-->
+          <div class="tabCafe">
+            <ul class="tabCon">
+              <li>
+                <img
+                  src="img/자두천도복숭아칠러_Plum-Peach-Chiller.png"
+                  alt="" />
+                <span>자두 천도 복숭아 칠러</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img
+                  src="img/제주한라봉칠러_Jeju-Hallabong-Chiller.png"
+                  alt="" />
+                <span>제주 한라봉 칠러</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/바닐라라떼_Vanilla-Latte.png" alt="" />
+                <span>바닐라라떼</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/아이스바닐라라떼_Iced-Vanilla-Latte.png" alt="" />
+                <span>아이스 바닐라라떼</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/카페라떼_Café-Latte.png" alt="" />
+                <span>카페라떼</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/아이스카페라떼_Iced-Café-Latte.png" alt="" />
+                <span>아이스 카페라떼</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/카푸치노_Cappuccino.png" alt="" />
+                <span>카푸치노</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/드립커피_Drip-Coffee.png" alt="" />
+                <span>드립 커피</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/아메리카노_Americano.png" alt="" />
+                <span>아메리카노</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/아이스아메리카노_Iced-Americano.png" alt="" />
+                <span>아이스 아메리카노</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <!-- <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/1955버거_1955®-Burger.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li> -->
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+          <!--tabHappyMeal-->
+          <div class="tabHappyMeal">
+            <ul class="tabCon">
+              <li>
+                <img src="img/에그맥머핀_Egg-McMuffin.png" alt="" />
+                <span>에그 맥머핀</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/불고기버거_Bulgogi-Burger.png" alt="" />
+                <span>불고기 버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/햄버거_Hamburger.png" alt="" />
+                <span>햄버거</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/맥너겟_McNuggets.png" alt="" />
+                <span>맥너겟</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/해쉬브라운_Hash-Brown.png" alt="" />
+                <span>해쉬브라운</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/핫케잌2조각_Hotcakes-2pcs.png" alt="" />
+                <span>핫케익 2조각</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>후렌치후라이</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>후렌치후라이</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>맥도버거5</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+              <li>
+                <img src="img/후렌치후라이_French-Fries.png" alt="" />
+                <span>맥도버거6</span>
+                <a href="detailpage.html">자세히보기</a>
+              </li>
+            </ul>
+            <span class="more"><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </section>
+        <section class="macdoPlace">
+          <form class="deliverySearch">
+            <!-- <p><img src="./img/deliveryLogo.png" alt="" /></p> -->
+            <h2>
+              <img src="./img/deliveryLogo.png" alt="" />우리집에 맥 딜리버리가
+              되나요?
+            </h2>
+            <input type="text" placeholder="주소를 입력해주세요" />
+            <input type="text" placeholder="상세주소를 입력해주세요" />
+            <button>검색하기</button>
+          </form>
+          <div class="macDrive">
+            <p>맥 드라이브</p>
+            <span><img src="./img/arrow.svg" alt="" /></span>
+          </div>
+          <div class="macDelivery">
+            <p>맥 딜리버리</p>
+            <span><img src="./img/arrow.svg" alt="" /></span>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <div class="mx">
+          <ul class="footerTitle">
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">위치정보 이용약관</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">임차문의</a></li>
+            <li><a href="#">고객문의</a></li>
+            <li><a href="#">인재채용</a></li>
+          </ul>
+          <ul class="footerInfo">
+            <li><a href="#">한국맥도날드(유)</a></li>
+            <li><a href="#">대표이사 : 김기원</a></li>
+            <li><a href="#">사업자등록번호 : 101-81-26409</a></li>
+            <li><a href="#">전화주문 : 1600-5252</a></li>
+            <li>
+              <a href="#"
+                >COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.</a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

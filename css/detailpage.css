@@ -1,0 +1,332 @@
+.sec1 {
+  /* border: 1px solid #000; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+}
+
+.sec1 h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.sec1 .menuTab {
+  display: flex;
+  gap: 20px;
+  padding: 3rem 0 5.5rem 0;
+}
+
+.sec1 .menuTab p {
+  position: relative;
+  color: #5c5c5c;
+  transition: 0.3s;
+}
+
+.sec1 .menuTab p:hover {
+  font-weight: bold;
+  cursor: pointer;
+  color: #2e2e2e;
+}
+
+.sec1 .menuTab p::after {
+  content: "";
+  position: absolute;
+  border-right: 1px solid #cecece;
+  height: 100%;
+  padding-right: 10px;
+}
+.sec1 .menuTab p:last-child::after {
+  border: none;
+}
+
+.mySwiper {
+  /* border: 1px solid #000; */
+  height: auto;
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 0 3rem 0;
+}
+.swiper-slide {
+  /* border: 1px solid red; */
+}
+.slideCon {
+  /* border: 1px solid red; */
+}
+
+.slideCon .slide {
+  /* border: 1px solid #000; */
+  padding: 1.5rem 0;
+}
+
+.slideCon .slide > h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 1.3rem;
+  /* border: 1px solid #000; */
+}
+.tabPage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.tabPage .materialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 2rem;
+}
+
+.tabPage .materialIcon > img {
+  width: 60px;
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: #f5f5f5;
+}
+
+.tabPage .materialIcon > li {
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  padding: 1.2rem;
+  border: 1px solid #000;
+}
+
+.tabPage .burgerInfo {
+  /* border: 1px solid #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 50%;
+  text-align: center;
+  margin: 0 25%;
+}
+
+.tabPage .setCon {
+  /* border: 1px solid #000; */
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabPage .setCon > p {
+  background-color: #ffbc0d;
+  color: #fff;
+  /* font-weight: bold; */
+  font-size: 0.9rem;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  position: relative;
+  /* border: 1px solid #000; */
+}
+
+.tabPage .setCon > p::before {
+  content: "";
+  position: absolute;
+  background-color: #ffbc0d;
+  width: 400%;
+  height: 1px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tabPage .setCon img {
+  width: 25%;
+  margin: 2rem 0;
+}
+
+.tabPage .infoBt {
+  text-align: center;
+  /* border: 1px solid #000; */
+  margin: 60px 0;
+}
+
+.infoTable {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 20px 0 100px 0;
+}
+.tabPage .infoBt a {
+  border-radius: 40px;
+  background-color: #535353;
+  color: #fff;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+}
+
+.tabPage .infoBt a.active {
+  background-color: #074e1f;
+}
+
+.infoTable .tList {
+  width: 70%;
+  margin: 0 15%;
+  margin-bottom: 30px;
+}
+.infoTable .tableList1 {
+  border: 1px solid #000;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.infoTable .tableList1 th,
+.infoTable .tableList1 tr {
+  padding: 0.5rem 1.2rem;
+}
+
+.infoTable .tableList1 th,
+.infoTable .tableList1 .trbold {
+  font-weight: bold;
+}
+
+.infoTable .tableList1 th {
+  border-right: 1px solid #000;
+  width: 18%;
+}
+
+.infoTable .tableList1 tr {
+  border-bottom: 1px solid #000;
+}
+
+.infoTable .tableList2 {
+  line-height: 20px;
+  font-size: 0.8rem;
+}
+
+.infoTable .tableList2 p {
+}
+.infoTable .tableList2 p span {
+  color: #858585;
+}
+
+.infoTable .tableList3 p {
+  font-size: 0.8rem;
+}
+
+.slideCon img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec1 .nextBt,
+.sec1 .prevBt {
+  top: 30%;
+}
+.sec1 .nextBt {
+  right: 5%;
+}
+
+.sec1 .prevBt {
+  left: 5%;
+}
+.sec1 .secCon {
+  display: none;
+  width: 100%;
+}
+
+.sec1 .menuTab p.on {
+  font-weight: bold;
+}
+
+/* .sec1 .secCon.on .menuTap > p {
+  font-weight: bold;
+} */
+
+@media (max-width: 900px) {
+  .hd .func .langIcon,
+  .searchIcon {
+    display: none;
+  }
+
+  .mx {
+    width: calc(100% - 4rem);
+  }
+  .hd .func .ham {
+    display: block;
+  }
+
+  .hd .gnbM > li > a {
+    display: none;
+    justify-content: flex-end;
+    align-items: start;
+  }
+  .infoTable .tList {
+    width: 90%;
+    margin: 0 5%;
+    margin-bottom: 30px;
+  }
+
+  .sec1 .menuTab {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    /* padding: 1.5rem 0 6rem 0; */
+  }
+  .sec1 .menuTab p {
+    font-size: 0.9rem;
+    width: calc(100% / 10 - 1px);
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* margin: 0;
+    gap: 0; */
+  }
+
+  .sec1 .menuTab p::after {
+    border: none;
+  }
+  .tabPage .materialIcon {
+    margin: 0 15%;
+  }
+  .tabPage .materialIcon > img {
+    padding: 0.5rem;
+    width: 40px;
+  }
+
+  .slideCon .slide > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabPage .materialIcon {
+    /* border: 1px solid #000; */
+    gap: 5px;
+  }
+  .tabPage .materialIcon > img {
+    padding: 0.5rem;
+    width: 40px;
+  }
+
+  .sec1 .menuTab {
+    gap: 10px;
+    /* border: 1px solid #000; */
+    justify-content: start;
+  }
+
+  .sec1 .menuTab p {
+    width: calc(100% / 3 - 7px);
+    /* border: 1px solid #000; */
+  }
+
+  .slideCon .slide > h2 {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+}
